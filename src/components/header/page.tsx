@@ -24,22 +24,22 @@ const Navbar = () => {
       >
         <SocialIcon
           url="https://linkedin.com/in/muhammad-tahir-109b80234/"
-          fgColor="rgb(3, 83, 82)"
+          fgColor="white"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://github.com/Tahir187"
-          fgColor="rgb(3, 83, 82)"
+          fgColor="white"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://instagram.com"
-          fgColor="rgb(3, 83, 82)"
+          fgColor="white"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://facebook.com"
-          fgColor="rgb(3, 83, 82)"
+          fgColor="white"
           bgColor="transparent"
         />
       </motion.div>
@@ -55,17 +55,17 @@ const Navbar = () => {
           scale: 1,
         }}
         transition={{
-          duration: 1,
+          duration: 1.5,
         }}
-        className="flex flex-row items-center text-[rgb(3, 83, 82)]"
+        className="flex flex-row items-center text-white"
       >
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="rgb(3, 83, 82)"
+          fgColor="white"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-[rgb(3, 83, 82)]">
+        <p className="uppercase hidden md:inline-flex text-sm text-white">
           Get In Touch
         </p>
       </motion.div>

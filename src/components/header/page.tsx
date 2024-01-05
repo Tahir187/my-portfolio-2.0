@@ -55,7 +55,7 @@ const Navbar = () => {
           scale: 1,
         }}
         transition={{
-          duration: 1.5,
+          duration: 1,
         }}
         className="flex flex-row items-center text-[rgb(3, 83, 82)]"
       >

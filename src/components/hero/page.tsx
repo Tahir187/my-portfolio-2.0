@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import BackgroundCircle from "../backgroundCircle/page";
+import Image from "next/image";
+import Link from "next/link";
 
 type Props = {};
 
@@ -10,24 +13,44 @@ const Hero = (props: Props) => {
       "Hi, The Name's Muhammad Tahir",
       "Guy-who-loves-coffee.tsx",
       "<ButLovesToCodeMore>",
-      "I'm a TypeScript expert, crafting beautiful code",
-      "JavaScript magician, weaving spells for the web",
-      "CSS artist, making websites look fantastic",
-      "I use Tailwind CSS to create responsive designs",
-      "I love React, creating user-friendly web interfaces",
-      "Node.js pro, taming backend complexities",
-      "MongoDB enthusiast, working magic with data",
-      "Express.js explorer, navigating server routes",
     ],
     loop: true,
     delaySpeed: 2000,
   });
   return (
-    <div>
-      <h1>
-        <span>{text}</span>
-        <Cursor cursorColor="#F7AB0A" />
-      </h1>
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+      <BackgroundCircle />
+      <Image
+        src={"/tahir.jpg"}
+        width={300}
+        height={400}
+        alt="hero image"
+        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+      />
+      <div className="z-20">
+        <h2 className="text-sm uppercase text-white-500 pb-2 tracking-[15px] ">
+          Softwer Engineer
+        </h2>
+        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+          <span className="mr-3">{text}</span>
+          <Cursor cursorColor="#F7AB0A" />
+        </h1>
+
+        <div className="pt-5">
+          <Link href="#about">
+            <button className="heroButton">About</button>
+          </Link>
+          <Link href="#experience">
+            <button className="heroButton">Experience</button>
+          </Link>
+          <Link href="#skilss">
+            <button className="heroButton">Skills</button>
+          </Link>
+          <Link href="#projects">
+            <button className="heroButton">Projects</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

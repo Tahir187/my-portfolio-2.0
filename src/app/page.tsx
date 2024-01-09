@@ -1,3 +1,4 @@
+import About from "@/components/about/page";
 import Navbar from "@/components/header/page";
 import Hero from "@/components/hero/page";
 
@@ -7,11 +8,13 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
       {/* About */}
-
+      <section id="about" className="snap-center">
+      <About/>
+      </section>
       {/* Exprience */}
 
       {/* skills */}

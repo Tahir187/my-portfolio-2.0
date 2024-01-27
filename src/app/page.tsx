@@ -1,6 +1,7 @@
 import About from "@/components/about/page";
 import Navbar from "@/components/header/page";
 import Hero from "@/components/hero/page";
+import SectionDivider from "@/components/sectionDivider/page";
 import WorkExperience from "@/components/workExperience/page";
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
 
       <section id="hero" className="snap-start">
         <Hero />
+      </section> 
+      <section>
+        <SectionDivider />
       </section>
       <section id="about" className="snap-center">
         <About />

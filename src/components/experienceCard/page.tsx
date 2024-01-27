@@ -35,7 +35,7 @@ const ExperienceCard = (props: Props) => {
         alt="javascript-logo"/>
         </div>
         <p className='uppercase py-5 text-white'>Started work... - Ended</p>
-        <ul className='list-disc space-y-4 ml-5 text-lg border '>
+        <ul className='list-disc space-y-4 ml-5 text-lg '>
           <li>Summary points</li>
           <li>Summary points</li>
           <li>Summary points</li>

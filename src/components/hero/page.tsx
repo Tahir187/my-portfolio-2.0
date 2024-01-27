@@ -12,13 +12,13 @@ const Hero = (props: Props) => {
     words: [
       "Hi, The Name's Muhammad Tahir",
       "Guy-who-loves-coffee.tsx",
-      "<ButLovesToCodeMore>",
+      "<ButLovesToCodeMore />",
     ],
     loop: true,
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-6 items-center justify-center text-center overflow-hidden">
       <BackgroundCircle />
       <Image
         src={"/tahir.jpg"}
@@ -28,10 +28,10 @@ const Hero = (props: Props) => {
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-white-500 pb-2 tracking-[15px] ">
+        <h2 className="text-sm uppercase text-white pb-2 tracking-[15px] ">
           Softwer Engineer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="text-2xl lg:text-3xl font-semibold px-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>

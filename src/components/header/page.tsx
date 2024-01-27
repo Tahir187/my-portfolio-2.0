@@ -50,14 +50,14 @@ const Navbar = () => {
           scale: 0.5,
         }}
         animate={{
-          x: 0,
+          x: 0, 
           opacity: 1,
           scale: 1,
         }}
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-white"
+        className="flex flex-row items-center text-white cursor-pointer"
       >
         <SocialIcon
           className="cursor-pointer"

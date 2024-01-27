@@ -10,24 +10,24 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row  max-w-5xl px-6 justify-evenly mx-auto items-center"
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row  max-w-5xl px-8 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-20 uppercase tracking-[16px] text-white text-2xl">
-        About
+      <h3 className="absolute top-20 uppercase tracking-[16px] text-white text-2xl pb-20">
+        About me
       </h3>
-      <div className="flex flex-col mx-auto items-center h-screen md:flex-row">
+
         <motion.img
           initial={{
             x: -170,
             opacity: 0,
           }}
           transition={{
-            duration: 1.1,
+            duration: 1.2,
           }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           src="/tahir.jpg"
-          className="mb-16 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-55 md:h-75 xl:w-[300px] xl:h-[370px]"
+          className="-mb-5 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-55 md:h-75 xl:w-[300px] xl:h-[370px]"
         />
         <div className="space-y-7 px-0 md:px-4">
           <h4 className="text-3xl font-semibold">
@@ -48,7 +48,6 @@ const About = (props: Props) => {
             tomorrow's digital landscapes. 🚀✨
           </p>
         </div>
-      </div>
     </motion.div>
   );
 };

@@ -10,13 +10,13 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col  max-w-5xl items-center"
+      className="flex flex-col  max-w-5xl items-center mx-auto"
     >
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20 ">
         About me
       </h3>
 
-        <div className="flex items-center justify-evenly flex-col pt-8 md:flex-row s">
+        <div className="flex items-center justify-evenly flex-col pt-8 md:flex-row mx-auto">
         <motion.img
           initial={{
             x: -170,

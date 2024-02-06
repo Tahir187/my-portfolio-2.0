@@ -29,15 +29,15 @@ export default function Project({
       opacity: opacityProgess,
     }}
     className="group mb-3 sm:mb-8 last:mb-0"
-    // initial={{
-    //         x: -170,
-    //         opacity: 0,
-    //       }}
-    //       transition={{
-    //         duration: 1.2,
-    //       }}
-    //       whileInView={{ opacity: 1, x: 0 }}
-    //       viewport={{ once: true }}
+    initial={{
+            x: -170,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
+          // viewport={{ once: true }}
     >
     <section
       className="bg-[#0d9a98] max-w-[42rem] border border-white/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] rounded-lg hover:bg-[#025d5c] transition group-even:pl-8"

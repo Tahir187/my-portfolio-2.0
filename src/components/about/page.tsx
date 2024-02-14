@@ -10,7 +10,9 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col  max-w-5xl items-center mx-auto mb-20"
+      className="flex flex-col  max-w-5xl items-center mx-auto mb-20 
+      backdrop bg-white bg-opacity-10 rounded border border-gray-300 shadow-lg
+      "
     >
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20 ">
         About me
@@ -30,7 +32,7 @@ const About = (props: Props) => {
           src="/tahir.jpg"
           className="mb-5 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-55 md:h-75 xl:w-[300px] xl:h-[370px]"
         />
-        <div className="space-y-7 px-0 md:px-4">
+        <div className="space-y-7 px-0 md:px-4 text-white">
           <h4 className="text-3xl font-semibold">
             Here is a{" "}
             <span className="underline decoration-[#F7AB0A]">little</span>{" "}

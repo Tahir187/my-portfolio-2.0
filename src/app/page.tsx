@@ -1,4 +1,5 @@
 import About from "@/components/about/page";
+import Experience from "@/components/experience/page";
 import Navbar from "@/components/header/page";
 import Hero from "@/components/hero/page";
 import Projects from "@/components/projects/page";
@@ -17,14 +18,16 @@ export default function Home() {
       <section id="about" className="snap-center">
         <About />
       </section>
-      <section className="snap-center" id="projects">
+      <section className="snap-start" id="projects">
         <Projects />
       </section>
       <section className="snap-start" id="skills">
         <Skills />
       </section>
-      {/* Projects */}
-
+      {/* experience */}
+      <section className="" id="experience">
+        <Experience />
+      </section>
       {/* Contact Me */}
     </div>
   );

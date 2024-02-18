@@ -1,6 +1,7 @@
 import React from "react";
 import exercise from "../../public/exercise.png";
 import gallery from "../../public/gallery.png";
+import { LuGraduationCap } from "react-icons/lu";
 
 export const projectsData = [
     {
@@ -39,3 +40,13 @@ export const projectsData = [
         imageUrl: gallery,
       },
 ] as const;
+
+export const experiencesData = [
+  {
+    title: 'Graduated bootcamp',
+    location: "Pakistan, Karachi, Contour Software",
+    description: "I graduated after 3 months of studying in MERN Stack technology, from reputed software house in karachi.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
+  },
+]

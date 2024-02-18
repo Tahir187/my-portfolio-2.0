@@ -40,7 +40,7 @@ export default function Project({
           viewport={{ once: true }}
     >
     <section
-      className=" backdrop bg-white bg-opacity-10 
+      className="backdrop bg-white bg-opacity-10 
        border-gray-300 shadow-lg max-w-[42rem] border border-white/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] rounded-lg hover:bg-[#071321] transition group-even:pl-8"
     >
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">

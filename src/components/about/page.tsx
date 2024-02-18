@@ -10,7 +10,7 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col  max-w-5xl items-center mx-auto mb-20 
+      className="flex flex-col max-w-5xl items-center mx-auto mb-20 
       backdrop bg-white bg-opacity-10 rounded border border-gray-300 shadow-lg
       "
     >

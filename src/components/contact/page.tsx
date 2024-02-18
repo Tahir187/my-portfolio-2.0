@@ -21,7 +21,7 @@ const ContactMe = ({}:Props) => {
   };
 
   return (
-    <div className="h-screen flex flex-col relative text-center max-w-5xl px-10 justify-evenly mx-auto items-center mb-10">
+    <div className="flex flex-col relative text-center max-w-5xl px-10 justify-evenly mx-auto items-center mb-20">
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20">
         Contact
       </h3>

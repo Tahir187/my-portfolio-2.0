@@ -10,8 +10,8 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col max-w-5xl items-center mx-auto mb-20 
-      backdrop bg-white bg-opacity-10 rounded border border-gray-300 shadow-lg
+      className="flex flex-col max-w-4xl  items-center mx-auto justify-center
+      backdrop bg-white bg-opacity-10 rounded border border-gray-500 shadow-lg
       "
     >
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20 ">
@@ -30,15 +30,15 @@ const About = (props: Props) => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           src="/tahir.jpg"
-          className="mb-5 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-55 md:h-75 xl:w-[300px] xl:h-[370px]"
+          className="mb-5 mt-10 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded md:w-55 md:h-75 xl:w-[280px] xl:h-[330px]"
         />
-        <div className="space-y-7 px-0 md:px-4 text-white">
-          <h4 className="text-3xl font-semibold">
+        <div className="space-y-7 px-0  md:px-4 text-white">
+          <h4 className="text-3xl font-semibold text-center">
             Here is a{" "}
             <span className="underline decoration-[#F7AB0A]">little</span>{" "}
             background
           </h4>
-          <p className="text-base">
+          <p className="text-base text-center w-full">
             Embarked on a digital odyssey post my Computer Science degree, I
             honed my craft at a transformative coding boot camp, emerging as a
             proficient MERN Stack Developer. Expanding my repertoire, I embraced

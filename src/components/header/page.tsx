@@ -2,6 +2,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -43,6 +44,7 @@ const Navbar = () => {
           bgColor="transparent"
         />
       </motion.div>
+      <Link href="#contact" >
       <motion.div
         initial={{
           x: 500,
@@ -69,6 +71,7 @@ const Navbar = () => {
           Get In Touch
         </p>
       </motion.div>
+      </Link>
     </header>
   );
 };

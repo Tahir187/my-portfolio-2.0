@@ -28,7 +28,7 @@ const Hero = (props: Props) => {
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-white pb-2 tracking-[15px] ">
+        <h2 className="text-sm uppercase text-white pb-2 tracking-[12px] md:tracking-[15px] xl:tracking-[18px] ">
           Softwer Engineer
         </h2>
         <h1 className="text-2xl lg:text-3xl font-semibold px-10">
@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
           <Cursor cursorColor="#F7AB0A" />
         </h1>
 
-        <div className="pt-5 flex gap-1">
+        <div className="pt-5 flex flex-col md:flex-row gap-1 ">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

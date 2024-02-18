@@ -11,7 +11,7 @@ type Props = {};
 
 const Experience = (props: Props) => {
   return (
-    <div className="flex flex-col max-w-5xl items-center mx-auto mb-20 ">
+    <div className="flex flex-col max-w-5xl items-center mx-auto mb-20 h-screen">
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20 mb-10">
         My Experience
       </h3>

@@ -50,7 +50,7 @@ const About = (props: Props) => {
             syntax, my code tells stories of innovation and user-centric design,
             ushering in a future where creativity harmonizes with efficiency.
             Join me on this perpetual quest, as we code the narrative of
-            tomorrow's digital landscapes. 🚀✨
+            tomorrow`&apos;` digital landscapes. 🚀✨
           </p>
         </div>
       </div>

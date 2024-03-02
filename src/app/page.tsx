@@ -6,24 +6,14 @@ import Navbar from "@/components/header/page";
 import Hero from "@/components/hero/page";
 import Projects from "@/components/projects/page";
 import Skills from "@/components/skills/page";
-import { Experience, PageInfo, Project, Skill, Social } from "../../typings";
 import { fetchSocials } from "../../utils/fetchSocials";
 import { fetchPageInfo } from "../../utils/fetchPageInfo";
 import { fetchSkills } from "../../utils/fetchSkill";
 import { fetchExperiences } from "../../utils/fetchExperiences";
 import { fetchProjects } from "../../utils/fetchProjects";
 
-type Props = {
-  pageInfo: PageInfo;
-  experiences: Experience[];
-  skills: Skill[];
-  projects: Project[];
-  socials: Social[];
-};
 
-
-
-export default async function Home({}:Props) {
+export default async function Home() {
   const socials = await fetchSocials();
   const pageInfo = await fetchPageInfo();
   const experiences = await fetchExperiences();
@@ -51,9 +41,6 @@ export default async function Home({}:Props) {
       </section>
       <section className="snap-start" id="contact">
         <ContactMe />
-      </section>
-      <section className="mb-20">
-        <Footer />
       </section>
       
     </div>

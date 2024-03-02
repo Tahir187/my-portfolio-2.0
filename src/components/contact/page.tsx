@@ -2,20 +2,16 @@
 import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { SubmitHandler, useForm } from "react-hook-form";
+import Footer from "../footer/page";
 type Inputs = {
   name: string;
   email: string;
   subject: string;
   message: string;
-}
+};
 
-type Props = {};
-
-const ContactMe = ({}:Props) => {
-  const {
-    register,
-    handleSubmit,
-  } = useForm<Inputs>();
+const ContactMe = () => {
+  const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:muhammadtahirbharchoond@gmail.com?subject=${formData.subject}& body=Hi, my name is ${formData.name}. ${formData.message} ${formData.email}`;
   };
@@ -46,24 +42,36 @@ const ContactMe = ({}:Props) => {
           </div>
         </div>
         <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-2 w-fit mx-auto">
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col space-y-2 w-fit mx-auto"
+        >
           <div className="flex space-x-2">
-            <input 
-            {...register('name')}
-            className="contactInput" type="text" placeholder="Name" />
+            <input
+              {...register("name")}
+              className="contactInput"
+              type="text"
+              placeholder="Name"
+            />
 
-            <input 
-            {...register('email')}
-            className="contactInput" type="Email" placeholder="Email" />
+            <input
+              {...register("email")}
+              className="contactInput"
+              type="Email"
+              placeholder="Email"
+            />
           </div>
-          <input 
-          {...register('subject')}
-          className="contactInput" type="text" placeholder="Subject" />
+          <input
+            {...register("subject")}
+            className="contactInput"
+            type="text"
+            placeholder="Subject"
+          />
 
           <textarea
-          {...register('message')}
-          placeholder="Message" className="contactInput" />
+            {...register("message")}
+            placeholder="Message"
+            className="contactInput"
+          />
           <button
             className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
             type="submit"
@@ -72,6 +80,9 @@ const ContactMe = ({}:Props) => {
           </button>
         </form>
       </div>
+      <section className="mt-20">
+        <Footer />
+      </section>
     </div>
   );
 };

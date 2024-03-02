@@ -39,7 +39,7 @@ const Hero = ({pageInfo}: Props) => {
           <Cursor cursorColor="#F7AB0A" />
         </h1>
 
-        <div className="pt-5 flex flex-col md:flex-row gap-1 ">
+        <div className="pt-5 flex flex-col md:flex-row gap-1 animate-pulse">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

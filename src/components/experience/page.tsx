@@ -57,7 +57,7 @@ const WorkExperience = ({ experiences }: Props) => {
                     key={technology._id}
                          src={builder.image(technology?.image).url()}
                     alt= "Technology Image"
-                    className="h-10 w-10 rounded-full"
+                    className="h-10 w-10 rounded-full animate-pulse"
                   />
                 ))}
               </div>

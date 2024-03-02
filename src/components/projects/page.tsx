@@ -1,5 +1,4 @@
 import React from "react";
-import { projectsData } from "@/lib/data";
 import Project from "../projectCard/page";
 import { Project as ProjectType } from "../../../typings";
 

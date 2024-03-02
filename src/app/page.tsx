@@ -1,31 +1,53 @@
 import About from "@/components/about/page";
 import ContactMe from "@/components/contact/page";
-import Experience from "@/components/experience/page";
+import WorkExperience from "@/components/experience/page";
 import Footer from "@/components/footer/page";
 import Navbar from "@/components/header/page";
 import Hero from "@/components/hero/page";
 import Projects from "@/components/projects/page";
 import Skills from "@/components/skills/page";
+import { Experience, PageInfo, Project, Skill, Social } from "../../typings";
+import { fetchSocials } from "../../utils/fetchSocials";
+import { fetchPageInfo } from "../../utils/fetchPageInfo";
+import { fetchSkills } from "../../utils/fetchSkill";
+import { fetchExperiences } from "../../utils/fetchExperiences";
+import { fetchProjects } from "../../utils/fetchProjects";
 
-export default function Home() {
+type Props = {
+  pageInfo: PageInfo;
+  experiences: Experience[];
+  skills: Skill[];
+  projects: Project[];
+  socials: Social[];
+};
+
+
+
+export default async function Home({}:Props) {
+  const socials = await fetchSocials();
+  const pageInfo = await fetchPageInfo();
+  const experiences = await fetchExperiences();
+  const skills = await fetchSkills()
+  const projects = await fetchProjects();
+
   return (
     <div className="bg-[url('/bg-3.jpg')] bg-cover bg-center text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
-      <Navbar />
+      <Navbar socials ={socials}  />
 
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero pageInfo = {pageInfo} />
       </section>
       <section id="about" className="snap-center">
         <About />
       </section>
       <section className="snap-start" id="projects">
-        <Projects />
+        <Projects projects = {projects} />
       </section>
       <section className="snap-start" id="skills">
-        <Skills />
+        <Skills skills = {skills}/>
       </section>
       <section className="snap-start" id="experience">
-        <Experience />
+        <WorkExperience experiences = {experiences} />
       </section>
       <section className="snap-start" id="contact">
         <ContactMe />

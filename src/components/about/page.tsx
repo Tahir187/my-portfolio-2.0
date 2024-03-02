@@ -10,15 +10,17 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col max-w-4xl  items-center mx-auto justify-center
-      backdrop bg-white bg-opacity-10 rounded border border-gray-500 shadow-lg
-      "
+      className="flex flex-col max-w-4xl  items-center mx-auto justify-center"
     >
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20 ">
         About me
       </h3>
 
-        <div className="flex items-center justify-evenly flex-col pt-8 md:flex-row mx-auto">
+      <div
+        className="flex items-center justify-evenly flex-col pt-8 md:flex-row mt-10 mx-auto
+         backdrop bg-white bg-opacity-10 rounded border border-gray-500 shadow-lg
+        "
+      >
         <motion.img
           initial={{
             x: -170,
@@ -38,7 +40,7 @@ const About = (props: Props) => {
             <span className="underline decoration-[#F7AB0A]">little</span>{" "}
             background
           </h4>
-          <p className="text-base text-center w-full">
+          <p className="text-base text-center w-full pb-7">
             Embarked on a digital odyssey post my Computer Science degree, I
             honed my craft at a transformative coding boot camp, emerging as a
             proficient MERN Stack Developer. Expanding my repertoire, I embraced
@@ -51,7 +53,7 @@ const About = (props: Props) => {
             tomorrow's digital landscapes. 🚀✨
           </p>
         </div>
-        </div>
+      </div>
     </motion.div>
   );
 };

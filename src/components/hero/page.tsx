@@ -4,13 +4,16 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircle from "../backgroundCircle/page";
 import Image from "next/image";
 import Link from "next/link";
+import { PageInfo } from "../../../typings";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-const Hero = (props: Props) => {
+const Hero = ({pageInfo}: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, The Name's Muhammad Tahir",
+      `Hi, The Name's Muhammad Tahir`,
       "Guy-who-loves-coffee.tsx",
       "<ButLovesToCodeMore />",
     ],

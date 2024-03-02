@@ -1,22 +1,29 @@
 "use client";
-import { experiencesData } from "@/lib/data";
+import { LuGraduationCap } from "react-icons/lu";
 import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Experience } from "../../../typings";
+import imageUrlBuilder from "@sanity/image-url";
+import client from "../../../sanity.utils";
 
-type Props = {};
+type Props = {
+  experiences: Experience[];
+};
 
-const Experience = (props: Props) => {
+const WorkExperience = ({ experiences }: Props) => {
+  const builder = imageUrlBuilder(client);
+
   return (
     <div className="flex flex-col max-w-5xl items-center mx-auto mb-20 h-screen">
       <h3 className="uppercase  tracking-[16px] text-white text-2xl pt-20 mb-10">
         My Experience
       </h3>
       <VerticalTimeline>
-        {experiencesData.map((experienceItem, index) => (
+        {experiences.map((experience, index) => (
           <div key={index} className="">
             <VerticalTimelineElement
               visible={true}
@@ -30,20 +37,30 @@ const Experience = (props: Props) => {
               contentArrowStyle={{
                 borderRight: "0.4rem solid #9ca3af",
               }}
-              date={experienceItem.date}
-              icon={experienceItem.icon}
+              date={new Date(experience.dateEnded).toDateString()}
+              icon={<LuGraduationCap />}
               iconStyle={{
                 background: "#071321",
                 fontSize: "1.5rem",
               }}
             >
               <h3 className="font-semibold capitalize">
-                {experienceItem.title}
+                {experience.jobTitle}
               </h3>
-              <p className="font-normal !mt-0">{experienceItem.location}</p>
+              <p className="font-normal !mt-0">{experience.address}</p>
               <p className="!mt-1 !font-normal text-gray-300">
-                {experienceItem.description}
+                {experience.description}
               </p>
+              <div className="flex space-x-3 my-2">
+                {experience.technologies?.map((technology) => (
+                  <img
+                    key={technology._id}
+                         src={builder.image(technology?.image).url()}
+                    alt= "Technology Image"
+                    className="h-10 w-10 rounded-full"
+                  />
+                ))}
+              </div>
             </VerticalTimelineElement>
           </div>
         ))}
@@ -52,4 +69,4 @@ const Experience = (props: Props) => {
   );
 };
 
-export default Experience;
+export default WorkExperience;

@@ -51,7 +51,7 @@ const WorkExperience = ({ experiences }: Props) => {
               <p className="!mt-1 !font-normal text-gray-300">
                 {experience.description}
               </p>
-              <div className="flex space-x-3 my-2">
+              <div className="flex space-x-3 my-3">
                 {experience.technologies?.map((technology) => (
                   <img
                     key={technology._id}

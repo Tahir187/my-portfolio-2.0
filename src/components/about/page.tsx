@@ -37,9 +37,10 @@ const About = (props: Props) => {
         <div className="space-y-7 px-0  md:px-4 text-white">
           <h4 className="text-3xl font-semibold text-center">
             Here is a{" "}
-            <span className="underline decoration-[#F7AB0A]">little</span>{" "}
+            <span className="underline decoration-[#F7AB0A]">little&apos;</span>{" "}
             background
           </h4>
+
           <p className="text-base text-center w-full pb-7">
             Embarked on a digital odyssey post my Computer Science degree, I
             honed my craft at a transformative coding boot camp, emerging as a
@@ -50,7 +51,7 @@ const About = (props: Props) => {
             syntax, my code tells stories of innovation and user-centric design,
             ushering in a future where creativity harmonizes with efficiency.
             Join me on this perpetual quest, as we code the narrative of
-            tomorrow`&apos;` digital landscapes. 🚀✨
+            tomorrow&apos; digital landscapes. 🚀✨
           </p>
         </div>
       </div>

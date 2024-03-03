@@ -5,7 +5,7 @@ import process from "process"; // Required to access process.env
 const client = createClient({
   projectId: "lf8cn0gf",
   dataset: "production",
-  apiVersion: "2023-03-04"
+  apiVersion: "2024-02-20"
 });
 
 console.log("Created client with configuration:", client); // Log the client object
